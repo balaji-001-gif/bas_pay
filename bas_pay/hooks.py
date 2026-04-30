@@ -17,8 +17,8 @@ fixtures = [
 
 # DocTypes
 # doctype_js = {
-#     "PayEase Wallet": "bas_pay/doctype/payease_wallet/payease_wallet.js",
-#     "PayEase Wallet Transaction": "bas_pay/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
+#     "PayEase Wallet": "bas_pay/payease/doctype/payease_wallet/payease_wallet.js",
+#     "PayEase Wallet Transaction": "bas_pay/payease/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
 # }
 
 # Scheduler events
