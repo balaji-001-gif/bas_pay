@@ -1,4 +1,4 @@
-app_name = "payease_erpnext"
+app_name = "bas_pay"
 app_title = "PayEase ERPNext"
 app_publisher = "PayEase"
 app_description = "PayEase Mobile Payment Integration for ERPNext"
@@ -17,13 +17,13 @@ fixtures = [
 
 # DocTypes
 doctype_js = {
-    "PayEase Wallet": "payease_erpnext/doctype/payease_wallet/payease_wallet.js",
-    "PayEase Wallet Transaction": "payease_erpnext/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
+    "PayEase Wallet": "bas_pay/doctype/payease_wallet/payease_wallet.js",
+    "PayEase Wallet Transaction": "bas_pay/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
 }
 
 # Scheduler events
 scheduler_events = {
     "daily": [
-        "payease_erpnext.api.transaction.process_daily_settlement"
+        "bas_pay.api.transaction.process_daily_settlement"
     ]
 }

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='payease_erpnext',
+    name='bas_pay',
     version='0.0.1',
     description='PayEase Mobile Payment Integration for ERPNext',
     author='PayEase',
