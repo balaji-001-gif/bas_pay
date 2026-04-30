@@ -13,7 +13,7 @@
   "is_standard": 1,
   "message": "<p>Your PayEase wallet balance is low.</p><p>Current Balance: {{ doc.currency }} {{ doc.balance }}</p><p>Please add money to continue using our services.</p>",
   "modified": "2026-04-30 10:00:00.000000",
-  "module": "Bas Pay",
+  "module": "PayEase Integration",
   "name": "Low Balance Alert",
   "print_format": "",
   "property_value": "",

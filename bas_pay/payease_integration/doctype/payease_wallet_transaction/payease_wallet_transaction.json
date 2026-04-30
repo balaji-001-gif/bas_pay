@@ -226,7 +226,7 @@
   "is_submittable": 0,
   "modified": "2026-04-30 10:00:00.000000",
   "modified_by": "Administrator",
-  "module": "Bas Pay",
+  "module": "PayEase Integration",
   "name": "PayEase Wallet Transaction",
   "naming_rule": "By fieldname",
   "owner": "Administrator",
