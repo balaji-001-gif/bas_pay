@@ -16,14 +16,14 @@ fixtures = [
 ]
 
 # DocTypes
-doctype_js = {
-    "PayEase Wallet": "bas_pay/doctype/payease_wallet/payease_wallet.js",
-    "PayEase Wallet Transaction": "bas_pay/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
-}
+# doctype_js = {
+#     "PayEase Wallet": "bas_pay/doctype/payease_wallet/payease_wallet.js",
+#     "PayEase Wallet Transaction": "bas_pay/doctype/payease_wallet_transaction/payease_wallet_transaction.js"
+# }
 
 # Scheduler events
-scheduler_events = {
-    "daily": [
-        "bas_pay.api.transaction.process_daily_settlement"
-    ]
-}
+# scheduler_events = {
+#     "daily": [
+#         "bas_pay.api.transaction.process_daily_settlement"
+#     ]
+# }
