@@ -24,6 +24,6 @@ fixtures = [
 # Scheduler events
 # scheduler_events = {
 #     "daily": [
-#         "bas_pay.payease.api.transaction.process_daily_settlement"
+#         "bas_pay.api.transaction.process_daily_settlement"
 #     ]
 # }

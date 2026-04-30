@@ -6,7 +6,7 @@ from frappe.utils import now_datetime
 def handle_transaction_webhook():
     """
     Receives transaction webhook from PayEase app
-    Endpoint: /api/method/bas_pay.payease.api.webhook_handler.handle_transaction_webhook
+    Endpoint: /api/method/bas_pay.api.webhook_handler.handle_transaction_webhook
     """
     data = frappe.request.get_json()
     
@@ -68,7 +68,7 @@ def create_erpnext_transaction(txn_data):
     
     # Trigger notification
     frappe.enqueue(
-        "bas_pay.payease.api.webhook_handler.send_transaction_notification",
+        "bas_pay.api.webhook_handler.send_transaction_notification",
         txn_doc=doc.name
     )
 
