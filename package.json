@@ -1,0 +1,7 @@
+{
+  "name": "bas_pay",
+  "version": "0.0.1",
+  "description": "PayEase Mobile Payment Integration for ERPNext",
+  "author": "PayEase",
+  "license": "MIT"
+}
