@@ -13,7 +13,7 @@
   "is_standard": 1,
   "message": "<p>A large transaction has been initiated on your PayEase wallet.</p><p>Transaction ID: {{ doc.transaction_id }}</p><p>Amount: {{ doc.currency }} {{ doc.amount }}</p><p>Type: {{ doc.type }}</p><p>If you did not authorize this transaction, please contact support immediately.</p>",
   "modified": "2026-04-30 10:00:00.000000",
-  "module": "PayEase",
+  "module": "Bas Pay",
   "name": "Large Transaction Alert",
   "print_format": "",
   "property_value": "",
