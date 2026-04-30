@@ -1,0 +1,16 @@
+include .gitignore
+include ERPNext_Integration_Guide.md
+include requirements.txt
+include setup.py
+recursive-include bas_pay *.py
+recursive-include bas_pay *.html
+recursive-include bas_pay *.js
+recursive-include bas_pay *.css
+recursive-include bas_pay *.png
+recursive-include bas_pay *.jpg
+recursive-include bas_pay *.svg
+recursive-include bas_pay *.json
+recursive-include bas_pay *.txt
+recursive-include bas_pay *.csv
+recursive-include bas_pay *.md
+recursive-exclude bas_pay *.pyc
