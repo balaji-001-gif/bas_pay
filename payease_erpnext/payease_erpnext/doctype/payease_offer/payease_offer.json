@@ -1,0 +1,158 @@
+{
+  "actions": [],
+  "creation": "2026-04-30 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "offer_code",
+    "title",
+    "description",
+    "discount_section",
+    "discount_type",
+    "discount_value",
+    "max_discount",
+    "min_transaction",
+    "validity_section",
+    "category",
+    "start_date",
+    "end_date",
+    "usage_section",
+    "usage_limit",
+    "usage_count",
+    "is_active"
+  ],
+  "fields": [
+    {
+      "fieldname": "offer_code",
+      "fieldtype": "Data",
+      "label": "Offer Code",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "discount_section",
+      "fieldtype": "Section Break",
+      "label": "Discount Details"
+    },
+    {
+      "fieldname": "discount_type",
+      "fieldtype": "Select",
+      "label": "Discount Type",
+      "options": "percentage\nfixed_amount\ncashback",
+      "default": "cashback"
+    },
+    {
+      "fieldname": "discount_value",
+      "fieldtype": "Currency",
+      "label": "Discount Value",
+      "default": "0"
+    },
+    {
+      "fieldname": "max_discount",
+      "fieldtype": "Currency",
+      "label": "Max Discount"
+    },
+    {
+      "fieldname": "min_transaction",
+      "fieldtype": "Currency",
+      "label": "Min Transaction",
+      "default": "0"
+    },
+    {
+      "fieldname": "validity_section",
+      "fieldtype": "Section Break",
+      "label": "Validity"
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "label": "Category",
+      "options": "food\nshopping\ntravel\nentertainment\nbills\nrecharge\ntransfer\nall",
+      "default": "all"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Datetime",
+      "label": "Start Date",
+      "default": "Now"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Datetime",
+      "label": "End Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "usage_section",
+      "fieldtype": "Section Break",
+      "label": "Usage Limits"
+    },
+    {
+      "fieldname": "usage_limit",
+      "fieldtype": "Int",
+      "label": "Usage Limit",
+      "default": "0",
+      "description": "0 = Unlimited"
+    },
+    {
+      "fieldname": "usage_count",
+      "fieldtype": "Int",
+      "label": "Usage Count",
+      "default": "0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Is Active",
+      "default": "1"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 0,
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "PayEase Offer",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Admin",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "title",
+  "track_changes": 1
+}

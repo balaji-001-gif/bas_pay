@@ -1,0 +1,109 @@
+{
+  "actions": [],
+  "creation": "2026-04-30 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "title",
+    "message",
+    "type",
+    "is_read",
+    "action_url",
+    "metadata",
+    "sent_via",
+    "read_at"
+  ],
+  "fields": [
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldname": "message",
+      "fieldtype": "Text",
+      "label": "Message",
+      "reqd": 1
+    },
+    {
+      "fieldname": "type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "transaction\npromo\nsecurity\nsystem\npayment_reminder",
+      "default": "system"
+    },
+    {
+      "fieldname": "is_read",
+      "fieldtype": "Check",
+      "label": "Is Read",
+      "default": "0"
+    },
+    {
+      "fieldname": "action_url",
+      "fieldtype": "Data",
+      "label": "Action URL"
+    },
+    {
+      "fieldname": "metadata",
+      "fieldtype": "Code",
+      "label": "Metadata",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "sent_via",
+      "fieldtype": "Select",
+      "label": "Sent Via",
+      "options": "app\nemail\nsms\npush",
+      "default": "app"
+    },
+    {
+      "fieldname": "read_at",
+      "fieldtype": "Datetime",
+      "label": "Read At"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 0,
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "PayEase Notification Log",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Admin",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}

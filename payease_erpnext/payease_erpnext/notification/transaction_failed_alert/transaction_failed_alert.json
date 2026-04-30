@@ -1,0 +1,34 @@
+{
+  "attach_print": 0,
+  "channel": "Email",
+  "channel_id": "",
+  "condition": "doc.status == 'Failed'",
+  "creation": "2026-04-30 10:00:00.000000",
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "PayEase Wallet Transaction",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 1,
+  "message": "<p>Your transaction has failed.</p><p>Transaction ID: {{ doc.transaction_id }}</p><p>Amount: {{ doc.currency }} {{ doc.amount }}</p><p>Reason: {{ doc.failure_reason or 'Unknown error' }}</p><p>Please try again or contact support if the issue persists.</p>",
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "Transaction Failed Alert",
+  "print_format": "",
+  "property_value": "",
+  "recipients": [
+    {
+      "receiver_by_document_field": "owner",
+      "receiver_by_role": ""
+    }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "",
+  "sender_email": "",
+  "set_property_after_alert": "",
+  "slack_webhook_url": "",
+  "subject": "PayEase: Transaction Failed - {{ doc.transaction_id }}",
+  "value_changed": "status"
+}

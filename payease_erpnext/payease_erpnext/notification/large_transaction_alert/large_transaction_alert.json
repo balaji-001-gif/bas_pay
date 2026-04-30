@@ -1,0 +1,34 @@
+{
+  "attach_print": 0,
+  "channel": "Email",
+  "channel_id": "",
+  "condition": "doc.amount > 10000",
+  "creation": "2026-04-30 10:00:00.000000",
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "PayEase Wallet Transaction",
+  "enabled": 1,
+  "event": "New",
+  "is_standard": 1,
+  "message": "<p>A large transaction has been initiated on your PayEase wallet.</p><p>Transaction ID: {{ doc.transaction_id }}</p><p>Amount: {{ doc.currency }} {{ doc.amount }}</p><p>Type: {{ doc.type }}</p><p>If you did not authorize this transaction, please contact support immediately.</p>",
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "Large Transaction Alert",
+  "print_format": "",
+  "property_value": "",
+  "recipients": [
+    {
+      "receiver_by_document_field": "owner",
+      "receiver_by_role": ""
+    }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "",
+  "sender_email": "",
+  "set_property_after_alert": "",
+  "slack_webhook_url": "",
+  "subject": "PayEase: Large Transaction Alert - {{ doc.amount }}",
+  "value_changed": ""
+}

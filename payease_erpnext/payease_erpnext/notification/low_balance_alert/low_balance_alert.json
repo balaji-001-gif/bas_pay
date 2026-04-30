@@ -1,0 +1,34 @@
+{
+  "attach_print": 0,
+  "channel": "Email",
+  "channel_id": "",
+  "condition": "doc.balance < 500",
+  "creation": "2026-04-30 10:00:00.000000",
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "PayEase Wallet",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 1,
+  "message": "<p>Your PayEase wallet balance is low.</p><p>Current Balance: {{ doc.currency }} {{ doc.balance }}</p><p>Please add money to continue using our services.</p>",
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "Low Balance Alert",
+  "print_format": "",
+  "property_value": "",
+  "recipients": [
+    {
+      "receiver_by_document_field": "user_email",
+      "receiver_by_role": ""
+    }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "",
+  "sender_email": "",
+  "set_property_after_alert": "",
+  "slack_webhook_url": "",
+  "subject": "PayEase: Low Wallet Balance Alert - {{ doc.wallet_id }}",
+  "value_changed": "balance"
+}

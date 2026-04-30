@@ -1,0 +1,264 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:wallet_id",
+  "creation": "2026-04-30 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "wallet_id",
+    "user_section",
+    "user_email",
+    "user_phone",
+    "user_name",
+    "balance_section",
+    "balance",
+    "currency",
+    "held_balance",
+    "limits_section",
+    "daily_limit",
+    "monthly_limit",
+    "per_transaction_limit",
+    "status_section",
+    "status",
+    "kyc_status",
+    "kyc_level",
+    "security_section",
+    "pin_set",
+    "two_factor_enabled",
+    "meta_section",
+    "erpnext_customer",
+    "created_from_app",
+    "column_break_meta",
+    "last_transaction_at",
+    "total_transactions",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "wallet_id",
+      "fieldtype": "Data",
+      "label": "Wallet ID",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "user_section",
+      "fieldtype": "Section Break",
+      "label": "User Information"
+    },
+    {
+      "fieldname": "user_email",
+      "fieldtype": "Data",
+      "label": "User Email",
+      "options": "Email"
+    },
+    {
+      "fieldname": "user_phone",
+      "fieldtype": "Data",
+      "label": "User Phone",
+      "options": "Phone"
+    },
+    {
+      "fieldname": "user_name",
+      "fieldtype": "Data",
+      "label": "User Name"
+    },
+    {
+      "fieldname": "balance_section",
+      "fieldtype": "Section Break",
+      "label": "Balance Details"
+    },
+    {
+      "fieldname": "balance",
+      "fieldtype": "Currency",
+      "label": "Available Balance",
+      "default": "0",
+      "reqd": 1
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Select",
+      "label": "Currency",
+      "options": "INR\nUSD\nEUR\nGBP",
+      "default": "INR"
+    },
+    {
+      "fieldname": "held_balance",
+      "fieldtype": "Currency",
+      "label": "Held Balance",
+      "default": "0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "limits_section",
+      "fieldtype": "Section Break",
+      "label": "Transaction Limits"
+    },
+    {
+      "fieldname": "daily_limit",
+      "fieldtype": "Currency",
+      "label": "Daily Limit",
+      "default": "50000"
+    },
+    {
+      "fieldname": "monthly_limit",
+      "fieldtype": "Currency",
+      "label": "Monthly Limit",
+      "default": "500000"
+    },
+    {
+      "fieldname": "per_transaction_limit",
+      "fieldtype": "Currency",
+      "label": "Per Transaction Limit",
+      "default": "100000"
+    },
+    {
+      "fieldname": "status_section",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Wallet Status",
+      "options": "Active\nInactive\nSuspended\nClosed",
+      "default": "Active",
+      "reqd": 1
+    },
+    {
+      "fieldname": "kyc_status",
+      "fieldtype": "Select",
+      "label": "KYC Status",
+      "options": "Pending\nVerified\nRejected\nUnder Review",
+      "default": "Pending"
+    },
+    {
+      "fieldname": "kyc_level",
+      "fieldtype": "Select",
+      "label": "KYC Level",
+      "options": "Level 0\nLevel 1\nLevel 2\nLevel 3",
+      "default": "Level 0"
+    },
+    {
+      "fieldname": "security_section",
+      "fieldtype": "Section Break",
+      "label": "Security"
+    },
+    {
+      "fieldname": "pin_set",
+      "fieldtype": "Check",
+      "label": "PIN Set",
+      "default": "0"
+    },
+    {
+      "fieldname": "two_factor_enabled",
+      "fieldtype": "Check",
+      "label": "Two Factor Enabled",
+      "default": "0"
+    },
+    {
+      "fieldname": "meta_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext Integration"
+    },
+    {
+      "fieldname": "erpnext_customer",
+      "fieldtype": "Link",
+      "label": "ERPNext Customer",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "created_from_app",
+      "fieldtype": "Check",
+      "label": "Created from App",
+      "default": "1",
+      "read_only": 1
+    },
+    {
+      "fieldname": "column_break_meta",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "last_transaction_at",
+      "fieldtype": "Datetime",
+      "label": "Last Transaction At",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_transactions",
+      "fieldtype": "Int",
+      "label": "Total Transactions",
+      "default": "0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "no_copy": 1,
+      "options": "PayEase Wallet",
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [
+    {
+      "group": "Transactions",
+      "link_doctype": "PayEase Wallet Transaction",
+      "link_fieldname": "wallet"
+    }
+  ],
+  "istable": 0,
+  "is_submittable": 0,
+  "modified": "2026-04-30 10:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "PayEase",
+  "name": "PayEase Wallet",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Admin",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 0,
+      "delete": 0,
+      "email": 1,
+      "export": 0,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Support",
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [],
+  "track_changes": 1,
+  "track_seen": 1,
+  "track_views": 1
+}

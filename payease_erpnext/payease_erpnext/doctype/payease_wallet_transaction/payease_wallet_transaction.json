@@ -1,0 +1,292 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:transaction_id",
+  "creation": "2026-04-30 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "transaction_id",
+    "transaction_details_section",
+    "wallet",
+    "type",
+    "status",
+    "amount",
+    "currency",
+    "column_break_txn",
+    "sender_wallet",
+    "receiver_wallet",
+    "receiver_phone",
+    "receiver_upi_id",
+    "receiver_name",
+    "payment_info_section",
+    "payment_method",
+    "description",
+    "remark",
+    "category",
+    "offer_applied",
+    "discount_amount",
+    "meta_section",
+    "reference_number",
+    "gateway_response",
+    "failure_reason",
+    "completed_at",
+    "reconciliation_section",
+    "journal_entry",
+    "payment_entry",
+    "sales_invoice",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "transaction_id",
+      "fieldtype": "Data",
+      "label": "Transaction ID",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "transaction_details_section",
+      "fieldtype": "Section Break",
+      "label": "Transaction Details"
+    },
+    {
+      "fieldname": "wallet",
+      "fieldtype": "Link",
+      "label": "Primary Wallet",
+      "options": "PayEase Wallet",
+      "reqd": 1
+    },
+    {
+      "fieldname": "type",
+      "fieldtype": "Select",
+      "label": "Transaction Type",
+      "options": "send_money\nreceive_money\nadd_money\nwithdraw\npay_bill\nrecharge\nqr_payment\nrefund",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nCompleted\nFailed\nCancelled\nRefunded",
+      "default": "Pending",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Select",
+      "label": "Currency",
+      "options": "INR\nUSD\nEUR\nGBP",
+      "default": "INR"
+    },
+    {
+      "fieldname": "column_break_txn",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "sender_wallet",
+      "fieldtype": "Link",
+      "label": "Sender Wallet",
+      "options": "PayEase Wallet"
+    },
+    {
+      "fieldname": "receiver_wallet",
+      "fieldtype": "Link",
+      "label": "Receiver Wallet",
+      "options": "PayEase Wallet"
+    },
+    {
+      "fieldname": "receiver_phone",
+      "fieldtype": "Data",
+      "label": "Receiver Phone"
+    },
+    {
+      "fieldname": "receiver_upi_id",
+      "fieldtype": "Data",
+      "label": "Receiver UPI ID"
+    },
+    {
+      "fieldname": "receiver_name",
+      "fieldtype": "Data",
+      "label": "Receiver Name"
+    },
+    {
+      "fieldname": "payment_info_section",
+      "fieldtype": "Section Break",
+      "label": "Payment Information"
+    },
+    {
+      "fieldname": "payment_method",
+      "fieldtype": "Select",
+      "label": "Payment Method",
+      "options": "wallet\nupi\ncard\nnetbanking\ncash",
+      "default": "wallet"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text",
+      "label": "Description"
+    },
+    {
+      "fieldname": "remark",
+      "fieldtype": "Data",
+      "label": "Remark"
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "label": "Category",
+      "options": "food\nshopping\ntravel\nentertainment\nbills\nrecharge\ntransfer\nother",
+      "default": "other"
+    },
+    {
+      "fieldname": "offer_applied",
+      "fieldtype": "Link",
+      "label": "Offer Applied",
+      "options": "PayEase Offer"
+    },
+    {
+      "fieldname": "discount_amount",
+      "fieldtype": "Currency",
+      "label": "Discount Amount",
+      "default": "0"
+    },
+    {
+      "fieldname": "meta_section",
+      "fieldtype": "Section Break",
+      "label": "Metadata"
+    },
+    {
+      "fieldname": "reference_number",
+      "fieldtype": "Data",
+      "label": "Bank Reference Number"
+    },
+    {
+      "fieldname": "gateway_response",
+      "fieldtype": "Code",
+      "label": "Gateway Response",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "failure_reason",
+      "fieldtype": "Text",
+      "label": "Failure Reason"
+    },
+    {
+      "fieldname": "completed_at",
+      "fieldtype": "Datetime",
+      "label": "Completed At"
+    },
+    {
+      "fieldname": "reconciliation_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext Reconciliation"
+    },
+    {
+      "fieldname": "journal_entry",
+      "fieldtype": "Link",
+      "label": "Journal Entry",
+      "options": "Journal Entry",
+      "read_only": 1
+    },
+    {
+      "fieldname": "payment_entry",
+      "fieldtype": "Link",
+      "label": "Payment Entry",
+      "options": "Payment Entry",
+      "read_only": 1
+    },
+    {
+      "fieldname": "sales_invoice",
+      "fieldtype": "Link",
+      "label": "Sales Invoice",
+      "options": "Sales Invoice",
+      "read_only": 1
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "no_copy": 1,
+      "options": "PayEase Wallet Transaction",
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 0,
+  "is_submittable": 0,
+  "modified": "2026-04-30 10:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "PayEase",
+  "name": "PayEase Wallet Transaction",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Admin",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 0,
+      "delete": 0,
+      "email": 1,
+      "export": 0,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Support",
+      "share": 0,
+      "write": 0
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": [
+    {
+      "color": "Orange",
+      "title": "Pending"
+    },
+    {
+      "color": "Green",
+      "title": "Completed"
+    },
+    {
+      "color": "Red",
+      "title": "Failed"
+    },
+    {
+      "color": "Gray",
+      "title": "Cancelled"
+    }
+  ],
+  "title_field": "transaction_id",
+  "track_changes": 1
+}

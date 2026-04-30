@@ -1,0 +1,133 @@
+{
+  "actions": [],
+  "creation": "2026-04-30 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "name1",
+    "phone",
+    "upi_id",
+    "bank_details_section",
+    "bank_account_number",
+    "bank_ifsc",
+    "bank_name",
+    "preferences_section",
+    "is_favorite",
+    "last_paid_amount",
+    "last_paid_date",
+    "total_payments"
+  ],
+  "fields": [
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "name1",
+      "fieldtype": "Data",
+      "label": "Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "phone",
+      "fieldtype": "Data",
+      "label": "Phone",
+      "reqd": 1
+    },
+    {
+      "fieldname": "upi_id",
+      "fieldtype": "Data",
+      "label": "UPI ID"
+    },
+    {
+      "fieldname": "bank_details_section",
+      "fieldtype": "Section Break",
+      "label": "Bank Details"
+    },
+    {
+      "fieldname": "bank_account_number",
+      "fieldtype": "Data",
+      "label": "Account Number"
+    },
+    {
+      "fieldname": "bank_ifsc",
+      "fieldtype": "Data",
+      "label": "IFSC Code"
+    },
+    {
+      "fieldname": "bank_name",
+      "fieldtype": "Data",
+      "label": "Bank Name"
+    },
+    {
+      "fieldname": "preferences_section",
+      "fieldtype": "Section Break",
+      "label": "Preferences"
+    },
+    {
+      "fieldname": "is_favorite",
+      "fieldtype": "Check",
+      "label": "Is Favorite",
+      "default": "0"
+    },
+    {
+      "fieldname": "last_paid_amount",
+      "fieldtype": "Currency",
+      "label": "Last Paid Amount",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_paid_date",
+      "fieldtype": "Date",
+      "label": "Last Paid Date",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_payments",
+      "fieldtype": "Int",
+      "label": "Total Payments",
+      "default": "0",
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 0,
+  "modified": "2026-04-30 10:00:00.000000",
+  "module": "PayEase",
+  "name": "PayEase Beneficiary",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "PayEase Admin",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "title_field": "name1",
+  "track_changes": 1
+}
