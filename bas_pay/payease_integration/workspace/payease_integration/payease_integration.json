@@ -1,0 +1,91 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"xbcjuqoldi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>PayEase Integration</b></span>\",\"col\":12}},{\"id\":\"wallets\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Wallet\",\"col\":3}},{\"id\":\"transactions\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Wallet Transaction\",\"col\":3}},{\"id\":\"merchants\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Merchant\",\"col\":3}},{\"id\":\"qrcodes\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase QR Code\",\"col\":3}},{\"id\":\"beneficiaries\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Beneficiary\",\"col\":3}},{\"id\":\"billpayments\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Bill Payment\",\"col\":3}},{\"id\":\"offers\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Offer\",\"col\":3}},{\"id\":\"notifications\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PayEase Notification Log\",\"col\":3}}]",
+ "creation": "2026-05-04 10:00:00.000000",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "accounting",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "label": "PayEase Integration",
+ "modified": "2026-05-04 10:00:00.000000",
+ "module": "PayEase Integration",
+ "name": "PayEase Integration",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [],
+ "route": "payease-integration",
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Wallets",
+   "label": "PayEase Wallet",
+   "link_to": "PayEase Wallet",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Transactions",
+   "label": "PayEase Wallet Transaction",
+   "link_to": "PayEase Wallet Transaction",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Merchants",
+   "label": "PayEase Merchant",
+   "link_to": "PayEase Merchant",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "format": "{} QR Codes",
+   "label": "PayEase QR Code",
+   "link_to": "PayEase QR Code",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "format": "{} Beneficiaries",
+   "label": "PayEase Beneficiary",
+   "link_to": "PayEase Beneficiary",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "format": "{} Bill Payments",
+   "label": "PayEase Bill Payment",
+   "link_to": "PayEase Bill Payment",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "format": "{} Offers",
+   "label": "PayEase Offer",
+   "link_to": "PayEase Offer",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "format": "{} Notifications",
+   "label": "PayEase Notification Log",
+   "link_to": "PayEase Notification Log",
+   "stats_filter": "{}",
+   "type": "DocType"
+  }
+ ]
+}
